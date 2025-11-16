@@ -245,16 +245,15 @@
         </section>
 
         <!-- FORM ĐĂNG KÝ -->
-        <section id="register" class="slide-in">
-            <h2>📝 Đăng ký tư vấn</h2>
-            <form onsubmit="submitForm(); return false;">
-                <input type="text" placeholder="Họ và tên" required>
-                <input type="tel" placeholder="Số điện thoại" required>
-                <textarea rows="4" placeholder="Nội dung cần tư vấn"></textarea>
-                <button type="submit">Gửi thông tin</button>
-            </form>
-        </section>
+        <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <input type="text" name="Họ tên" placeholder="Họ và tên" required>
+    <input type="tel" name="Số điện thoại" placeholder="Số điện thoại" required>
+    <textarea name="Nội dung" placeholder="Nội dung cần tư vấn" rows="4"></textarea>
 
+    <button type="submit">Gửi thông tin</button>
+</form>
         <!-- LIÊN HỆ -->
         <section id="contact" class="slide-in">
             <h2>📞 Liên hệ trực tiếp</h2>
@@ -274,7 +273,7 @@
 
     <!-- FOOTER -->
     <div class="footer">
-        © 2025 Trọng Tín – BIDV Quảng Trị | Website cá nhân
+        © 2025 Trọng Tín BIDV | Website cá nhân
     </div>
 
     <!-- JAVASCRIPT -->
@@ -284,7 +283,7 @@
         }
 
         function submitForm() {
-            alert("Cảm ơn bạn! Thông tin đã được gửi.\nTrọng Tín sẽ liên hệ sớm nhất!");
+            alert("Cảm ơn bạn! Thông tin đã được gửi.\n Tôi sẽ liên hệ sớm nhất!");
         }
 
         function revealOnScroll() {
